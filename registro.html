@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro - Adidas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .barra-nav {
+            background-color: #000;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .barra-nav img {
+            height: 40px;
+            filter: invert(1);
+        }
+
+        .barra-nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .contenido {
+            padding: 20px;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="barra-nav">
+        <img src="logo.png" alt="Logo Adidas">
+        <nav>
+            <a href="index.html">Inicio / Tienda</a> | 
+            <a href="login.html">Iniciar Sesión</a> | 
+            <a href="registro.html">Registrarse</a>
+        </nav>
+    </div>
+
+    <div class="contenido">
+        <h1>Crear Cuenta Nuevo Usuario</h1>
+
+        <form action="#" method="POST">
+            
+            <label>Nombre Completo:</label><br>
+            <input type="text" name="nombre" placeholder="Nombre y Apellidos" required>
+            <br><br>
+
+            <label>Correo Electrónico:</label><br>
+            <input type="email" name="correo" placeholder="correo@ejemplo.com" required>
+            <br><br>
+
+            <label>Contraseña:</label><br>
+            <input type="password" name="password" placeholder="Crea una contraseña" required>
+            <br><br>
+
+            <input type="submit" value="Registrarme">
+
+        </form>
+    </div>
+
+</body>
+</html>
